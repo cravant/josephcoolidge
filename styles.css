@@ -1,1 +1,123 @@
+/* Color palette */
+:root {
+  --primary: #1f2650;
+  --light: #fff9f3;
+  --gray: #d2d2d2;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--light);
+  color: var(--primary);
+  line-height: 1.6;
+}
+
+/* Header */
+.hero {
+  position: relative;
+  height: 90vh;
+  background: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 60px;
+  color: var(--light);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  opacity: 0.6;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+/* Section styling */
+.section {
+  padding: 80px 60px;
+}
+
+.section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+/* Divisions grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 2px solid var(--gray);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Values */
+.values-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.values-list li {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  border-left: 4px solid var(--primary);
+}
+
+/* Leadership */
+.leader-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid var(--gray);
+  max-width: 450px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 40px;
+  background: var(--primary);
+  color: var(--light);
+  margin-top: 60px;
+}
